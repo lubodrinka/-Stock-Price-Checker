@@ -41,7 +41,7 @@ module.exports =( function (app) {
         modules: ['price', 'summaryDetail'] // see the docs for the full list
       }, function (err, quotes) {
         // .
-       
+          if (err) {res.send(element+" doesn't exist"); return err}
           var query = {
             name: element
           };
