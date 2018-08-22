@@ -37,7 +37,7 @@ app.use(function(req, res, next) {
     .send('Not Found');
 });
 // Sets "Referrer-Policy: same-origin".
-/*app.use(helmet.referrerPolicy({ policy: 'same-origin' }))*/
+app.use(helmet.referrerPolicy({ policy: 'same-origin' }))
 app.use(helmet.contentSecurityPolicy({
   directives: {
     defaultSrc: ["'self'"],

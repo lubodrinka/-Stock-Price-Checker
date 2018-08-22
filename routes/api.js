@@ -15,7 +15,7 @@ var MongoClient = require('mongodb');
 var request = require('request');
 const CONNECTION_STRING = process.env.DB; //
 var yahooFinance = require('yahoo-finance');
-const middleWare = require('middleware');
+
 
 
 module.exports =( function (app) {
